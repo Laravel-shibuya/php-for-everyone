@@ -29,5 +29,11 @@
         <server name="MAIL_DRIVER" value="array"/>
         <server name="QUEUE_CONNECTION" value="sync"/>
         <server name="SESSION_DRIVER" value="array"/>
+        <server name="DB_CONNECTION" value="mysql"/>
+        <server name="DB_HOST" value="test-mysql"/>
+        <server name="DB_PORT" value="3306"/>
+        <server name="DB_DATABASE" value="app"/>
+        <server name="DB_USERNAME" value="app"/>
+        <server name="DB_PASSWORD" value="password"/>
     </php>
 </phpunit>
