@@ -1,0 +1,24 @@
+version: '3'
+services:
+  composer:
+    image: composer:1.8.5
+    volumes:
+      - './src:/app'
+  php-cli:
+    build:
+      context: .
+      dockerfile: ./docker/php-cli/Dockerfile
+      args:
+        - TZ=${TZ}
+  nginx:
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    environment:
+      - TZ=${TZ}
+  php-fpm:
+    build:
+      context: .
+      dockerfile: ./docker/php-fpm/Dockerfile
+      args:
+        - TZ=${TZ}
