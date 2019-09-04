@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "laravel-shibuya/php-for-everyone",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "「みんなのPHP」のサンプルアプリケーションです。",
     "keywords": [
         "framework",
         "laravel"
@@ -14,11 +14,15 @@
         "laravel/tinker": "^1.0"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.6",
         "beyondcode/laravel-dump-server": "^1.0",
+        "codedungeon/phpunit-result-printer": "0.25.*",
+        "doctrine/dbal": "^2.9",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
+        "nunomaduro/larastan": "^0.3.17",
         "phpunit/phpunit": "^7.5"
     },
     "config": {
@@ -48,6 +52,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "tests": [
+            "@php artisan code:analyse",
+            "phpunit"
+        ],
+        "coverage": [
+            "phpunit --coverage-html ./tests/coverage"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
