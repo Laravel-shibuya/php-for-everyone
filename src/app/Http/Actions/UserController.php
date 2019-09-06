@@ -5,7 +5,7 @@ namespace App\Http\Actions;
 
 use App\Domain\Eloquent\User;
 
-final class UserController extends Controller
+final class UserController extends Action
 {
     public function show(User $user)
     {

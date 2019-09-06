@@ -9,7 +9,7 @@ use App\Http\Requests\Post\Update as UpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-final class PostController extends Controller
+final class PostController extends Action
 {
     public function index()
     {
