@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Policies;
+namespace App\Domain\Policies;
 
 use App\Domain\Eloquent\Post;
 use App\Domain\Eloquent\User;
