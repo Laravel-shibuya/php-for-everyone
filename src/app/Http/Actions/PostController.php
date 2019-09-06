@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Http\Controllers;
+namespace App\Http\Actions;
 
 use App\Domain\Eloquent\Post;
 use App\Http\Requests\Post\Store as StoreRequest;
