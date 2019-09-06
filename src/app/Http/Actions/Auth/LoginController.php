@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Actions\Auth;
 
-use App\Http\Controllers\Controller;
+use App\Http\Actions\Action;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
-class LoginController extends Controller
+class LoginController extends Action
 {
     /*
     |--------------------------------------------------------------------------

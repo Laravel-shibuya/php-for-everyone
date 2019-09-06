@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Actions;
 
 use Illuminate\Support\Facades\Auth;
 
-class HomeController extends Controller
+class HomeController extends Action
 {
     /**
      * Create a new controller instance.

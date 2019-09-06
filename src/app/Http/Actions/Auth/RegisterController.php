@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Actions\Auth;
 
-use App\Eloquent\User;
-use App\Http\Controllers\Controller;
+use App\Domain\Eloquent\User;
+use App\Http\Actions\Action;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
-class RegisterController extends Controller
+class RegisterController extends Action
 {
     /*
     |--------------------------------------------------------------------------

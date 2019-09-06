@@ -1,6 +1,6 @@
 @php
-    /** @var \App\Eloquent\User $user */
-    /** @var \App\Eloquent\Post[]|\Illuminate\Pagination\LengthAwarePaginator $posts */
+    /** @var \App\Domain\Eloquent\User $user */
+    /** @var \App\Domain\Eloquent\Post[]|\Illuminate\Pagination\LengthAwarePaginator $posts */
 @endphp
 
 @extends('layouts.app')

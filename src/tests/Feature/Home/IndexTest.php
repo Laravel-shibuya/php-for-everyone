@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Home;
 
-use App\Eloquent\User;
+use App\Domain\Eloquent\User;
 use Tests\TestCase;
 
 final class IndexTest extends TestCase

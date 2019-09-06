@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Post;
 
-use App\Eloquent\User;
+use App\Domain\Eloquent\User;
 use Symfony\Component\HttpFoundation\Response;
 use Tests\TestCase;
 

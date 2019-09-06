@@ -1,5 +1,5 @@
 @php
-/** @var \App\Eloquent\Post[]|\Illuminate\Database\Eloquent\Collection $posts */
+/** @var \App\Domain\Eloquent\Post[]|\Illuminate\Database\Eloquent\Collection $posts */
 @endphp
 
 @extends('layouts.app')

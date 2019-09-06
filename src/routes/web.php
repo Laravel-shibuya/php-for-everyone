@@ -48,6 +48,6 @@ Route::prefix('posts')
             ->middleware('can:destroy,post');
     });
 
-    Route::get('', 'PostController@index')->name('index');
+    Route::get('', 'Post\Index')->name('index');
     Route::get('{post}', 'PostController@show')->name('show');
 });

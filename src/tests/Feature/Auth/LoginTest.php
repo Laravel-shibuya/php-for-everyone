@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Auth;
 
-use App\Eloquent\User;
+use App\Domain\Eloquent\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Auth;
 use Tests\TestCase;

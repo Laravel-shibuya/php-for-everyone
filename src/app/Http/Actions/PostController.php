@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Http\Controllers;
+namespace App\Http\Actions;
 
-use App\Eloquent\Post;
+use App\Domain\Eloquent\Post;
 use App\Http\Requests\Post\Store as StoreRequest;
 use App\Http\Requests\Post\Update as UpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-final class PostController extends Controller
+final class PostController extends Action
 {
     public function index()
     {
