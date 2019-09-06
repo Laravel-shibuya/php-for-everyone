@@ -2,8 +2,8 @@
 
 namespace App\Policies;
 
-use App\Eloquent\Post;
-use App\Eloquent\User;
+use App\Domain\Eloquent\Post;
+use App\Domain\Eloquent\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PostPolicy

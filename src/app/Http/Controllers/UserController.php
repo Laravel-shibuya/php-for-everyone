@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use App\Eloquent\User;
+use App\Domain\Eloquent\User;
 
 final class UserController extends Controller
 {

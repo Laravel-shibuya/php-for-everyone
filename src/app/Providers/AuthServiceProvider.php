@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Eloquent\Post;
+use App\Domain\Eloquent\Post;
 use App\Policies\PostPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 

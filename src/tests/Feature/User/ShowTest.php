@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\User;
 
-use App\Eloquent\Post;
-use App\Eloquent\User;
+use App\Domain\Eloquent\Post;
+use App\Domain\Eloquent\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Symfony\Component\HttpFoundation\Response;
 use Tests\TestCase;

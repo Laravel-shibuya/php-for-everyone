@@ -1,5 +1,5 @@
 @php
-    /** @var \App\Eloquent\Post $post */
+    /** @var \App\Domain\Eloquent\Post $post */
 @endphp
 
 @extends('layouts.app')

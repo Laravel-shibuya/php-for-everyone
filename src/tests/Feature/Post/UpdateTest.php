@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\Post;
 
-use App\Eloquent\Post;
-use App\Eloquent\User;
+use App\Domain\Eloquent\Post;
+use App\Domain\Eloquent\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Response;
 use Tests\TestCase;

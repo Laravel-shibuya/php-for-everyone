@@ -2,8 +2,8 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\Eloquent\Post;
-use App\Eloquent\User;
+use App\Domain\Eloquent\Post;
+use App\Domain\Eloquent\User;
 use Faker\Generator as Faker;
 
 $factory->define(Post::class, function (Faker $faker) {
