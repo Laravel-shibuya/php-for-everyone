@@ -16,9 +16,7 @@ Auth::routes([
     'verify' => false,
 ]);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PostController@index');
 
 //Route::get('/', 'PostController@index')->name('top');
 Route::get('/home', 'HomeController@index')->name('home');
@@ -51,3 +49,7 @@ Route::prefix('posts')
     Route::get('', 'PostController@index')->name('index');
     Route::get('{post}', 'PostController@show')->name('show');
 });
+
+Route::post('/posts/{post}/comments', 'CommentController@store')
+     ->name('comments.store')
+     ->middleware('auth');

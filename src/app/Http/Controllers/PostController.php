@@ -22,7 +22,8 @@ final class PostController extends Controller
     public function show(int $postId)
     {
         $post = Post::findOrFail($postId);
-        return view('post.show', compact('post'));
+        $comments = $post->comments()->get();
+        return view('post.show', compact('post', 'comments'));
     }
 
     public function create()
