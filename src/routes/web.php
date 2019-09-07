@@ -16,9 +16,7 @@ Auth::routes([
     'verify' => false,
 ]);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PostController@index');
 
 //Route::get('/', 'PostController@index')->name('top');
 Route::get('/home', 'HomeController@index')->name('home');
