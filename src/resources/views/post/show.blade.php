@@ -32,7 +32,7 @@
             <section class="mt-4">
                 <div class="card">
                     <div class="card-body">
-                        <form action="#" method="POST">
+                        <form action="{{ route('comments.store', $post) }}" method="POST">
                             @csrf
                             <div class="form-group">
                               <textarea class="form-control"
