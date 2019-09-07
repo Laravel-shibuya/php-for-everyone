@@ -49,3 +49,7 @@ Route::prefix('posts')
     Route::get('', 'PostController@index')->name('index');
     Route::get('{post}', 'PostController@show')->name('show');
 });
+
+Route::post('/posts/{post}/comments', 'CommentController@store')
+     ->name('comments.store')
+     ->middleware('auth');
