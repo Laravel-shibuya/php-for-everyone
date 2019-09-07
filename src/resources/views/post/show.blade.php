@@ -32,6 +32,9 @@
             <section class="mt-4">
                 <div class="card">
                     <div class="card-body">
+                        @foreach ($comments as $comment)
+                            <p>{{ $comment->body }}</p><hr>
+                        @endforeach
                         <form action="{{ route('comments.store', $post) }}" method="POST">
                             @csrf
                             <div class="form-group">
