@@ -29,6 +29,23 @@
                     </div>
                 </div>
             </section>
+            <section class="mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="#" method="POST">
+                            @csrf
+                            <div class="form-group">
+                              <textarea class="form-control"
+                                        name="body"
+                                        placeholder="コメントを入力してください。"
+                                        required
+                              ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-sm">コメントする</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
